@@ -78,13 +78,13 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
         <Competences skills={skills} />
       </section>
 
-      <section id="projects" className="snap-start">
+      {/* <section id="projects" className="snap-start">
         <Diplomes projects={projects}/>
       </section>
 
       <section id='contact' className='snap-start'>
         <MessageMe />
-      </section>
+      </section> */}
 {/* 
       <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
