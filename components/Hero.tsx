@@ -26,9 +26,9 @@ export default function Hero({ pageInfo }: Props) {
             <BackgroundCircles />
             <img
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
-                // src='https://i.postimg.cc/52hNRBnB/filter-Isabelle-
-                // Sadat-min.png'
-                src={urlFor(pageInfo?.heroImage).url()}
+                src='https://i.postimg.cc/52hNRBnB/filter-Isabelle-
+                Sadat-min.png'
+                // src={urlFor(pageInfo?.heroImage).url()}
                 alt="Isabelle Sadat Medecin"
             />
             <div className='z-20'>
