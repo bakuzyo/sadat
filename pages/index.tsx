@@ -70,7 +70,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
         <About pageInfo={pageInfo} />
       </section>
 
-     /* <section id="experience" className="snap-center">
+      <section id="experience" className="snap-center">
         <WorkExperience experiences={experiences}/>
       </section>
 
@@ -78,17 +78,13 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
         <Competences skills={skills} />
       </section>
 
-      {/* <section id="projects" className="snap-start">
+      <section id="projects" className="snap-start">
         <Diplomes projects={projects}/>
       </section>
 
       <section id='contact' className='snap-start'>
         <MessageMe />
-<<<<<<< HEAD
-      </section> */}
-=======
-      </section>*/
->>>>>>> e6bbf0b8cdd3165477df9fa74fa599dbd5be4ff3
+      </section>
 {/* 
       <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
