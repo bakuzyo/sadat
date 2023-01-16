@@ -25,6 +25,9 @@ type Props = {
 }
 
 const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
+  const Hero = dynamic(() => import('../components/Hero'), {
+    ssr: false,
+  })
   
   const Diplomes = dynamic(() => import('../components/Diplomes'), {
     ssr: false,
@@ -41,9 +44,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
   const Header = dynamic(() => import('../components/Header'), {
     ssr: false,
   })
-  const Hero = dynamic(() => import('../components/Hero'), {
-    ssr: false,
-  })
+
 
   const MessageMe = dynamic(() => import('../components/MessageMe'), {
     ssr: false,
