@@ -19,6 +19,7 @@ export default function Hero({ pageInfo }: Props) {
         loop: true,
         delaySpeed: 2000,
     });
+    
 
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center
@@ -38,16 +39,16 @@ export default function Hero({ pageInfo }: Props) {
                     <Cursor cursorColor='#F7AB0A' />
                 </h1>
                 <div className='pt-5'>
-                    <Link href="#about">
+                    <Link href="#apropos">
                         <button className='heroButton'>À propos</button>
                     </Link>
-                    <Link href="#experience">
+                    <Link href="#exp">
                         <button className='heroButton'>Expérience</button>
                     </Link>
-                    <Link href="#skills">
+                    <Link href="#certificat">
                         <button className='heroButton'>Compétences</button>
                     </Link>
-                    <Link href="#projects">
+                    <Link href="#objectif">
                         <button className='heroButton'>Projets</button>
                     </Link>
                 </div>

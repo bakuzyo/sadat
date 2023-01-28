@@ -77,7 +77,10 @@ export default function Header({ socials }: Props) {
                         fgColor="gray"
                         bgColor="transparent"
                     />
-                    <a href="mailto:isabelle.sadat@wanadoo.fr" className='uppercase hidden md:inline-flex text-sm text-gray-400'>
+                    {/* <a href="mailto:isabelle.sadat@wanadoo.fr" className='uppercase hidden md:inline-flex text-sm text-gray-400'>
+                        Me contacter
+                    </a> */}
+                    <a href="#contact" className='uppercase hidden md:inline-flex text-sm text-gray-400'>
                         Me contacter
                     </a>
                 </motion.div>

@@ -31,7 +31,7 @@ export default function About() {
             viewport={{ once: true }}
             // src="https://i.postimg.cc/52hNRBnB/filter-Isabelle-
             // // Sadat-min.png"
-            className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
+            className='-mb-10 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover
              md:rounded-lg md:w-95 md:h-64 xl:w-[500px] xl:h-[600px]'
             // src={urlFor(pageInfo?.profilePic).url()}
             src="https://cdn.sanity.io/images/rlw8j87m/production/96e0e5cecb6330e5a9aea367313870476bc2bad2-3744x4992.jpg"

@@ -1,13 +1,13 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-// import About from '../components/About'
-// import Competences from '../components/Competences'
-// import Diplomes from '../components/Diplomes'
-// import WorkExperience from '../components/WorkExperience'
-// import Header from '../components/Header'
-// import Hero from '../components/Hero'
-// import MessageMe from '../components/MessageMe'
+import About from '../components/About'
+import Competences from '../components/Competences'
+import Diplomes from '../components/Diplomes'
+import WorkExperience from '../components/WorkExperience'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import MessageMe from '../components/MessageMe'
 import { Experience, PageInfo, Project, Skill, Social } from "../typings";
 import { fetchPageInfo } from '../utils/fetchPageInfo'
 import { fetchExperiences } from '../utils/fetchExperiences'
@@ -15,6 +15,8 @@ import { fetchSkills } from '../utils/fetchSkills'
 import { fetchProjects } from '../utils/fetchProjects'
 import { fetchSocial } from '../utils/fetchSocials'
 import dynamic from 'next/dynamic'
+
+import React, { useEffect } from 'react';
 
 type Props = {
   pageInfo: PageInfo;
@@ -25,33 +27,33 @@ type Props = {
 }
 
 const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
-  const Hero = dynamic(() => import('../components/Hero'), {
-    ssr: false,
-  })
+  // const Hero = dynamic(() => import('../components/Hero'), {
+  //   ssr: false,
+  // })
   
-  const Diplomes = dynamic(() => import('../components/Diplomes'), {
-    ssr: false,
-  })
+  // const Diplomes = dynamic(() => import('../components/Diplomes'), {
+  //   ssr: false,
+  // })
 
-  const Competences = dynamic(() => import('../components/Competences'), {
-    ssr: false,
-  })
+  // const Competences = dynamic(() => import('../components/Competences'), {
+  //   ssr: false,
+  // })
 
-  const WorkExperience = dynamic(() => import('../components/WorkExperience'), {
-    ssr: false,
-  })
+  // const WorkExperience = dynamic(() => import('../components/WorkExperience'), {
+  //   ssr: false,
+  // })
 
-  const Header = dynamic(() => import('../components/Header'), {
-    ssr: false,
-  })
+  // const Header = dynamic(() => import('../components/Header'), {
+  //   ssr: false,
+  // })
 
 
-  const MessageMe = dynamic(() => import('../components/MessageMe'), {
-    ssr: false,
-  })
-  const About = dynamic(() => import('../components/About'), {
-    ssr: false,
-  })
+  // const MessageMe = dynamic(() => import('../components/MessageMe'), {
+  //   ssr: false,
+  // })
+  // const About = dynamic(() => import('../components/About'), {
+  //   ssr: false,
+  // })
 
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
@@ -67,23 +69,23 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
         <Hero pageInfo={pageInfo}/>
       </section>
 
-      <section id='about' className='snap-center'>
+      <section id="apropos" className='snap-center'>
         <About />
       </section>
 
-      <section id="experience" className="snap-center">
+      <section id="exp" className="snap-center">
         <WorkExperience experiences={experiences}/>
       </section>
 
-      <section id="skills" className='snap-start'>
+      <section id="certificat" className='snap-start'>
         <Competences skills={skills} />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="objectif" className="snap-start">
         <Diplomes projects={projects}/>
       </section>
 
-      <section id='contact' className='snap-start'>
+      <section id="contact" className='snap-start'>
         <MessageMe />
       </section>
 {/* 
