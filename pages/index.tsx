@@ -26,11 +26,11 @@ type Props = {
   socials: Social[];
 }
 
-const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
+const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   // const Hero = dynamic(() => import('../components/Hero'), {
   //   ssr: false,
   // })
-  
+
   // const Diplomes = dynamic(() => import('../components/Diplomes'), {
   //   ssr: false,
   // })
@@ -56,7 +56,10 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
   // })
 
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
+    // <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
+    //   overflow-y-scroll overflow-x-hidden z-0 scrollbar 
+    //    scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+      <div className='bg-[rgb(0,16,60)] text-white h-screen snap-y snap-mandatory
       overflow-y-scroll overflow-x-hidden z-0 scrollbar 
        scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
@@ -66,7 +69,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
       <Header socials={socials} />
 
       <section id="hero" className='snap-start'>
-        <Hero pageInfo={pageInfo}/>
+        <Hero pageInfo={pageInfo} />
       </section>
 
       <section id="apropos" className='snap-center'>
@@ -74,7 +77,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
       </section>
 
       <section id="exp" className="snap-center">
-        <WorkExperience experiences={experiences}/>
+        <WorkExperience experiences={experiences} />
       </section>
 
       <section id="certificat" className='snap-start'>
@@ -82,13 +85,13 @@ const Home = ({ pageInfo, experiences, projects, skills, socials}: Props ) => {
       </section>
 
       <section id="objectif" className="snap-start">
-        <Diplomes projects={projects}/>
+        <Diplomes projects={projects} />
       </section>
 
       <section id="contact" className='snap-start'>
         <MessageMe />
       </section>
-{/* 
+      {/* 
       <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
