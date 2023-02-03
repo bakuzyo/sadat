@@ -17,14 +17,14 @@ function MessageMe() {
     };
 
     return (
-        <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row
+        <div className='h-screen flex relative flex-col text-center text-left flex-row
         max-w-7xl px-10 justify-evenly mx-auto items-center'>
             <h3 className='invisible md:visible absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 Contact
             </h3>
 
             <div className='flex flex-col space-y-10'>
-                <h4 className='text-4xl font-semibold text-center'>
+                <h4 className='md:text-4xl font-semibold text-center'>
                     Contactez-moi pour prendre rendez vous.{" "}
                     <span className='decoration-[#F7AB0A]/50 underline'>Discutons.</span>
                 </h4>
@@ -46,13 +46,13 @@ function MessageMe() {
 
                     <div className='flex items-center space-x-5'>
                         <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
-                        <p className='text-2xl'>
+                        <p className='md:text-2xl'>
                             25 Rue Philippe de Girard, 75010 à Paris
                         </p>
                     </div>
 
                     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
-                        <div className='flex space-x-2'>
+                        <div className='flex space-x-2 md:max-w-[500px] max-w-[50px]'>
                             <input
                                 {...register('name')}
                                 placeholder="Nom"
@@ -62,7 +62,7 @@ function MessageMe() {
                             <input
                                 {...register('email')}
                                 placeholder="Email"
-                                className='contactInput'
+                                className='contactInput md:visible invisible'
                                 type="email"
                             />
                         </div>

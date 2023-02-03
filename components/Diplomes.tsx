@@ -59,7 +59,7 @@ function Diplomes({ projects }: Props) {
                                     />
                                 ))} */}
                             </div>
-                            <p className='text-base md:text-lg text-center'>
+                            <p className='text-sm md:text-lg text-center'>
                                 {project?.sommaire}
                                 {/* {project?.linkTobuild} */}
                             </p>
