@@ -19,7 +19,6 @@ export default function Hero({ pageInfo }: Props) {
         loop: true,
         delaySpeed: 2000,
     });
-    
 
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center

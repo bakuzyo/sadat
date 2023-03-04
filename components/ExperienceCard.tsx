@@ -14,7 +14,7 @@ export default function ExperienceCard({ experience }: Props) {
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0
            w-[300px] h-[730px] md:w-[600px] xl:w-[900px] snap-center bg-[rgb(0,16,102)] md:p-6 p-3
               hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200
-                  overflow-hidden'>
+                  overflow-hidden responsivAdjust'>
             <motion.img
                 initial={{
                     y: -100,
@@ -39,27 +39,13 @@ export default function ExperienceCard({ experience }: Props) {
                     {/* <img
                     className='h-10 w-10 rounded-full'
                     src="https://i.postimg.cc/52hNRBnB/filter-Isabelle-
-                Sadat-min.png"
+                        Sadat-min.png"
                     alt=""
-                />
-                <div>
-                <img
-                    className='h-10 w-10 rounded-full'
-                    src="https://i.postimg.cc/52hNRBnB/filter-Isabelle-
-                Sadat-min.png"
-                    alt=""
-                />
-                </div>
-                <img
-                    className='h-10 w-10 rounded-full'
-                    src="https://i.postimg.cc/52hNRBnB/filter-Isabelle-
-                Sadat-min.png"
-                    alt=""
-                /> */}
+                    />*/}
                     {experience.technologies.map(technology => (
                         <img
                             key={technology._id}
-                            className="h-8 w-8 md:h-[75px] md:w-[75px] md:m-2 m-1 object-cover rounded-full"
+                            className="h-8 w-8 md:h-[75px] md:w-[75px] md:m-2 m-1 object-cover rounded-full responsivAjustText2"
                             src={urlFor(technology.image).url()}
                         />
                     ))}
@@ -67,7 +53,7 @@ export default function ExperienceCard({ experience }: Props) {
                 {/* <p className='uppercase py-5 text-gray-300'>
                     {new Date(experience.dateStarted).toDateString()}
                 </p> */}
-                <ul className='text-center md:text-base text-xs space-y-4 ml-5'>
+                <ul className='text-center md:text-base text-xs space-y-4 ml-5 responsivAjustText'>
                     {experience.points.map((point, i) => (
                         <li key={i}>{point}</li>
                     ))}

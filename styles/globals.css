@@ -16,4 +16,22 @@
         text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40
         focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
     }
+    @media (max-height: 768px) {
+        .responsivAdjust {
+            max-height: 590px!important;
+            padding: 1em!important;
+        }
+        .responsivAjustText {
+            font-size: 0.8em!important;
+            margin-top: -1em!important;
+        }
+        .responsivAjustText2 {
+            margin-top: -0.5em!important;
+            padding: 0.5em;
+        }
+        .visibleOrNot {
+            visibility: hidden!important;
+            display: none;
+        }
+    }
 }
