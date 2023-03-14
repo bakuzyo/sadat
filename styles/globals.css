@@ -16,7 +16,7 @@
         text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40
         focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40
     }
-    @media (max-height: 768px) {
+    @media (min-width: 1106px) and (max-width: 1108px) and (min-height: 624px) and (max-height: 626px) {
         .responsivAdjust {
             max-height: 590px!important;
             padding: 1em!important;
@@ -32,6 +32,10 @@
         .visibleOrNot {
             visibility: hidden!important;
             display: none;
+        }
+        .photoResponsiv{
+            max-height: 250px!important;
+
         }
     }
 }

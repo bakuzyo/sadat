@@ -27,7 +27,7 @@ function Diplomes({ projects }: Props) {
                     <div
                         key={project._id}
                         className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5
-                         items-center justify-center p-20 md:p-44 h-screen'>
+                         items-center justify-center p-20 md:p-44 h-screen '>
                         <motion.img
                             initial={{
                                 y: -300,
@@ -37,7 +37,7 @@ function Diplomes({ projects }: Props) {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             src={urlFor(project?.image).url()}
-                            className='md:h-[450px]'
+                            className='md:h-[450px] photoResponsiv'
                             // src="https://cdn.sanity.io/images/rlw8j87m/production/6b7e553f490c40e1de7f49d3641db8e3fa0c5804-600x397.jpg"
                             alt=""
                         />
