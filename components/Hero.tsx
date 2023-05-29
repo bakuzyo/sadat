@@ -42,7 +42,7 @@ export default function Hero({ pageInfo }: Props) {
                         <button className='heroButton'>À propos</button>
                     </Link>
                     <Link href="#exp">
-                        <button className='heroButton'>Expérience</button>
+                        <button className='heroButton'>Méthodologie</button>
                     </Link>
                     <Link href="#certificat">
                         <button className='heroButton'>Compétences</button>
