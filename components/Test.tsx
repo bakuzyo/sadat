@@ -93,8 +93,8 @@ max-w-full justify-evenly mx-auto items-center z-0'>
     <div className="relative inline-block red">
       <img src={imageSrc} alt="Image with quote" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="w-64 h-64 object-cover rounded-lg shadow-lg" />
       {showQuote && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-md shadow-md">
-          <p className="text-lg font-medium text-black">{quote.text}</p>
+        <div className="absolute w-full top-full left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-md shadow-md">
+          <p className="font-medium text-black">{quote.text}</p>
           <p className="text-right text-gray-500 italic mt-2">- {quote.author}</p>
         </div>
       )}
